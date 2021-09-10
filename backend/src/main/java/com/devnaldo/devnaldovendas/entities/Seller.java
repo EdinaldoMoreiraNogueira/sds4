@@ -20,4 +20,9 @@ public class Seller {
 
     @ManyToMany(mappedBy = "seller")
     private List<Sale> sales = new ArrayList<>();
+
+    public Seller(){
+
+    }
+
 }

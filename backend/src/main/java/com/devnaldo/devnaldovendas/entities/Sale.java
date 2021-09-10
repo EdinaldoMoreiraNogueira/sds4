@@ -2,7 +2,6 @@ package com.devnaldo.devnaldovendas.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -24,4 +23,9 @@ public class Sale {
     @ManyToOne
     @JoinColumn(name = "seller_id")
     private Seller seller;
+
+    public Sale(){
+
+    }
+
 }
